@@ -19,10 +19,16 @@ Default values are inserted into all fields in the generated `linenums_target.cs
 
 After editing this csv file, this script can be re-run, just as it was initially, and the new `.csv` file will then be applied, so that line numbers will appear as specified.
 
+If desired, the user can specify the path to the line number `.csv` file as follows:
+
+```bash
+python /path_to_folder/main.py target.pdf linenums_target.csv
+```
+
 
 # Dependencies
 
-This program uses `pypdf` to add line numbers as annotations to the pdf. To install, run:
+This program uses `pypdf` to add line numbers as annotations to the pdf, and `csv` to manage the csv file. To install, run:
 ```bash
 pip install pypdf
 ```
